@@ -14,3 +14,15 @@ services:
       - ./apache.conf:/opt/bitnami/apache/conf/httpd.conf
       - ./site1.html:/opt/bitnami/apache/site1/index.html
       - ./site2.html:/opt/bitnami/apache/site2/index.html
+
+  ihs_cn:
+    image: "bitnami/apache:latest"
+    volumes:
+      - ./ihs.conf:/opt/bitnami/apache/conf/httpd.conf
+      - ./site1.html:/opt/bitnami/apache/site/index.html
+
+  ihs_hk:
+    image: "bitnami/apache:latest"
+    volumes:
+      - ./ihs.conf:/opt/bitnami/apache/conf/httpd.conf
+      - ./site2.html:/opt/bitnami/apache/site/index.html
