@@ -12,8 +12,6 @@ services:
     image: "bitnami/apache:latest"
     volumes:
       - ./apache.conf:/opt/bitnami/apache/conf/httpd.conf
-      - ./site1.html:/opt/bitnami/apache/site1/index.html
-      - ./site2.html:/opt/bitnami/apache/site2/index.html
 
   ihs_cn:
     image: "bitnami/apache:latest"
